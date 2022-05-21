@@ -22,7 +22,7 @@ Using [AAD Pod Identity](https://github.com/Azure/aad-pod-identity).
 $ kubectl run aadtoken \
   --rm \
   --attach \
-  --image=skibish/aadtoken
+  --image=skibish/aadtoken \
   --image-pull-policy=Always \
   --labels="aadpodidbinding=<your value>" \
   --restart=Never \
